@@ -1,17 +1,12 @@
-# "Program do rejestrowania pacjentów na wizyty u lekarza"
+# Doctor Diary app
 
-### Założenia projektu
-Program musi:
-- umożliwić wprowadzenie danych pacjenta (imię, nazwisko, PESEL) oraz przypisanie mu terminu wizyty
-- dla danego pacjenta udostępniać listę wszystkich wizyt, natomiast dla wybranego dnia – wyświetlać listę wszystkich zajętych terminów
-- zapis/odczyt danych używanych przez program odbywa się do/z pliku tekstowego (można użyć standardowego formatu, np. CSV/TSV lub JSON)
-***
+## General
+Simple console app, that simulate doctor e-diary for storing patients and appointments data. The app allows to enter patient data to the system, assign an appointment to a patient, read list of all appointments for the specified patient or date. Data persistence is based on text file with json format - patients.json' and 'appointments.json'.
 
-### Struktura projektu
+## Demo
 
-Punktem wejściowym aplikacji jest plik 'main.py', który można uruchomić zarówno w terminalu jak i wykorzystując IDE.
-Po uruchomieniu pliku 'main.py' w konsoli pojawia się  czytelny dla użytkownika interfejs aplikacji.
+## Installation
+Entrypoint for the app is 'main.py' file and after running the app, you will see simple interface in your CLI.
+This app does not require extra packages except Python standard library.
 
-Program nie wymaga instalowania pakietów dodatkowych spoza biblioteki standardowej.
 
-Do trwałego przechowywania danych pacjentów i wizyt wykorzystano format JSON, a konkretnie 2 pliki: 'patients.json' i 'appointments.json'. Nie należy samemu edytować tych plików. W wyjątkowym przypadku, gdyby użytkownik chciał szybko usunąć wszyskie dane w tych plikach, należy zastąpić ich zawartość wyrażeniem '[]'.
