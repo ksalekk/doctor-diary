@@ -4,13 +4,13 @@ from services.user_interface import UserInterface, Choice
 
 class ChoiceController:
     """
-    A class to represent mediator between user and model.
-    Use UserInterface and ModelManager dependencies to manage data flowing.
+    A class that represents mediator between user and model.
+    It uses UserInterface and ModelManager dependencies to manage data flowing.
     """
 
     def __init__(self, model_manager, user_interface):
         """
-        Injection dependencies to controller and invoke printing welcome text for user.
+        Injecting dependencies to controller and printing welcome text for user.
 
         Arguments:
             model_manager (ModelManager): model managing dependency
@@ -77,7 +77,6 @@ class ChoiceController:
         add new patient, write patients.json file and print operation status for user.
         """
 
-        # ! WARNING !
         # Input data validation was commented (easier for testing).
         try:
             pesel = self.user_interface.get_patient_pesel()
@@ -141,12 +140,8 @@ class ChoiceController:
             self.user_interface.print_info("NIEPRAWIDŁOWY FORMAT DANYCH")
             return
 
-
     def print_patient_appointments(self):
         """ Display user interface, get input data and print appointments for specified patient """
-
-        # ! WARNING !
-        # Input data validation was commented (easier for testing):
 
         if self.model_manager.get_patients_count() == 0:
             self.user_interface.print_info("BRAK ZAREJESTROWANYCH PACJENTÓW")

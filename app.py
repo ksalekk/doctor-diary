@@ -23,7 +23,7 @@ class App:
     If files were corrupted, create new 'patients.json', 'appointments.json' files
     in data directory and fill them only with '[]'.
 
-    Architecture of the app try to follow MVC pattern.
+    App architecture try to follow MVC pattern.
     """
 
     def __init__(self):
@@ -34,7 +34,7 @@ class App:
         self.start_app()
 
     def start_app(self):
-        """Start and stop app running."""
+        """Start and stop app."""
 
         run_app = True
         while run_app:

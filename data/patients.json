@@ -63,5 +63,15 @@
         "pesel": "14",
         "firstname": "Sarah",
         "lastname": "Best"
+    },
+    {
+        "pesel": "123",
+        "firstname": "John",
+        "lastname": "Doe"
+    },
+    {
+        "pesel": "100",
+        "firstname": "John",
+        "lastname": "Doe2"
     }
 ]

@@ -1,6 +1,6 @@
 class Patient:
     """
-    A class to represent a patient.
+    A class that represents a patient.
 
     Attributes
     ----------
@@ -23,7 +23,7 @@ class Patient:
 
 class Appointment:
     """
-    A class to represent an appointment.
+    A class that represents an appointment.
     Every instance is related to the specified patient with unique PESEL.
 
     Attributes
