@@ -1,7 +1,7 @@
 # Doctor Diary app
 
 ## General
-Simple console app, that simulate doctor e-diary for storing patients and appointments data. The app allows to enter patient data to the system, assign an appointment to a patient, read list of all appointments for the specified patient or date. Data persistence is based on text file with json format - patients.json' and 'appointments.json'.
+Simple console app that simulate doctor e-diary for storing patients and appointments data. The app allows to e.g. enter patient data to the system, assign an appointment to a patient, read list of all appointments for the specified patient or date. Data persistence is based on text files with json format - patients.json' and 'appointments.json'.
 
 ## Demo
 ![Lists all patients](./demo_images/1.png)
